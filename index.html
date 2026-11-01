@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="ja" data-theme="middle">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Task Clock</title>
+  <meta name="description" content="タスク管理と作業時間記録をひとつにした個人向けアプリ">
+  <meta name="theme-color" content="#1f252d">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="hdr">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" width="22" height="22">
+      <strong class="brand-name">Task Clock</strong>
+      <time id="headerClock" class="header-clock"></time>
+    </div>
+
+    <!-- 計測バー：どの画面でも常に見える -->
+    <section id="timerBar" class="timer-bar idle" aria-live="polite">
+      <span class="timer-dot"></span>
+      <div id="timerPath" class="timer-path">計測していません</div>
+      <div id="timerSub" class="timer-sub"></div>
+      <output id="timerElapsed" class="timer-elapsed"></output>
+      <div class="timer-actions">
+        <button id="quickStartBtn" class="btn primary" title="分類を決めずにすぐ計測（後でタスクを割り当て）">▶ すぐ開始</button>
+        <button id="interruptBtn" class="btn warn" hidden title="今の作業を区切って割り込みを計測。終われば元の作業へ戻れます">⚡<span class="lbl"> 割り込み</span></button>
+        <button id="stopBtn" class="btn primary" hidden title="停止して記録">■<span class="lbl" id="stopLbl"> 停止</span></button>
+        <button id="doneStopBtn" class="btn ghost" hidden title="停止してタスクを完了にする">✓<span class="lbl"> 完了</span></button>
+        <button id="timerMenuBtn" class="btn ghost icon" hidden title="その他" aria-haspopup="true">…</button>
+      </div>
+      <div id="timerMenu" class="popover" hidden>
+        <button data-timer-act="assign">タスクを割り当て/変更</button>
+        <button data-timer-act="note">メモを付ける</button>
+        <button data-timer-act="adjust">開始時刻を修正</button>
+        <button data-timer-act="cancel" class="danger-text">計測を取り消す（記録しない）</button>
+      </div>
+    </section>
+
+    <div class="brand-actions">
+      <span id="syncBadge" class="chip warn" hidden title="未エクスポートの変更があります">未エクスポート</span>
+      <button id="installBtn" class="btn ghost small" hidden>インストール</button>
+      <button id="endDayBtn" class="btn ghost small" title="作業終了：今日の振り返りとエクスポート">終業</button>
+    </div>
+  </div>
+
+  <nav class="tabs" id="tabs" role="tablist">
+    <button data-view="home" class="active"><i>⌂</i>ホーム</button>
+    <button data-view="tasks"><i>☑</i>タスク<span class="tab-count" id="tabCountTasks"></span></button>
+    <button data-view="projects"><i>▦</i>Project</button>
+    <button data-view="records"><i>≡</i>記録</button>
+    <button data-view="report"><i>▤</i>集計</button>
+    <button data-view="settings"><i>⚙</i>設定</button>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- ホーム -->
+  <section class="view active" id="view-home">
+    <form class="capture" data-capture>
+      <input name="q" autocomplete="off" placeholder="思いついたことを入力して Enter（例: 見積書作成 @A案件 #資料 ~30m !today）">
+      <button class="btn primary">追加</button>
+    </form>
+    <div class="stat-row" id="homeStats"></div>
+    <div class="home-grid">
+      <section class="panel">
+        <div class="panel-head"><h2>今日やること</h2><span class="muted small" id="todayHint"></span></div>
+        <div id="todayList" class="task-list"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>要対応</h2><span class="muted small">詰まり・期限・見積超過</span></div>
+        <div id="alertList"></div>
+      </section>
+      <section class="panel span-2">
+        <div class="panel-head">
+          <h2>今日のタイムライン</h2>
+          <span class="row-gap"><span class="muted small" id="timelineHint"></span><button class="btn ghost small" data-act="end-day">終業</button></span>
+        </div>
+        <div id="timeline" class="timeline"></div>
+        <div id="gapList" class="gap-list"></div>
+      </section>
+      <section class="panel span-2">
+        <div class="panel-head"><h2>次にできること（Next）</h2><button class="btn ghost small" data-goto="tasks" data-state="next">すべて</button></div>
+        <div id="nextList" class="task-list"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- タスク -->
+  <section class="view" id="view-tasks">
+    <form class="capture" data-capture>
+      <input name="q" autocomplete="off" placeholder="タスクを入力して Enter（@Project #タグ ~見積 !today *毎週 が使えます）">
+      <button class="btn primary">追加</button>
+    </form>
+    <div class="sticky-bar filter-bar">
+      <div class="seg scroll-x" id="stateFilter">
+        <button data-state="today">Today<span></span></button>
+        <button data-state="inbox" class="active">Inbox<span></span></button>
+        <button data-state="next">Next<span></span></button>
+        <button data-state="waiting">Waiting<span></span></button>
+        <button data-state="calendar">Calendar<span></span></button>
+        <button data-state="later">Later<span></span></button>
+        <button data-state="done">完了<span></span></button>
+      </div>
+      <div class="filter-inline">
+        <select id="taskProjectFilter"><option value="">全Project</option></select>
+        <input id="taskSearch" type="search" placeholder="検索">
+      </div>
+    </div>
+    <p class="state-help muted small" id="stateHelp"></p>
+    <div id="taskList" class="task-list"></div>
+  </section>
+
+  <!-- Project -->
+  <section class="view" id="view-projects">
+    <div class="toolbar">
+      <button class="btn primary" id="addProjectBtn">＋ Project</button>
+      <label class="check"><input type="checkbox" id="showArchived"> アーカイブも表示</label>
+    </div>
+    <div id="projectList" class="project-grid"></div>
+  </section>
+
+  <!-- 記録 -->
+  <section class="view" id="view-records">
+    <div class="sticky-bar toolbar wrap">
+      <button class="btn primary" id="addRecordBtn">＋ 手入力</button>
+      <select id="recRange">
+        <option value="7">直近7日</option>
+        <option value="31" selected>直近31日</option>
+        <option value="92">直近3か月</option>
+        <option value="366">直近1年</option>
+        <option value="future">今日以降の予定</option>
+        <option value="all">全期間</option>
+      </select>
+      <select id="recKind">
+        <option value="">実績＋予定</option>
+        <option value="actual">実績のみ</option>
+        <option value="plan">予定のみ</option>
+      </select>
+      <label class="check"><input type="checkbox" id="recUnassigned"> 未割当のみ</label>
+      <input id="recSearch" type="search" placeholder="分類・タグ・メモを検索">
+      <span class="row-gap">
+        <button class="btn ghost small" id="recOpenAll">すべて開く</button>
+        <button class="btn ghost small" id="recCloseAll">すべて閉じる</button>
+        <button class="btn ghost small" id="bulkEditBtn">一括置換</button>
+      </span>
+    </div>
+    <div id="recordList"></div>
+  </section>
+
+  <!-- 集計 -->
+  <section class="view" id="view-report">
+    <div class="sticky-bar report-controls">
+      <label>期間
+        <select id="rPeriod">
+          <option value="today">今日</option>
+          <option value="week" selected>今週</option>
+          <option value="lastweek">先週</option>
+          <option value="month">今月</option>
+          <option value="lastmonth">先月</option>
+          <option value="next30">今後30日</option>
+          <option value="custom">任意…</option>
+        </select>
+      </label>
+      <span id="customRange" class="custom-range" hidden><input type="date" id="rFrom">～<input type="date" id="rTo"></span>
+      <label>対象 <select id="rScope"><option value="actual">実績のみ</option><option value="all">実績＋予定</option></select></label>
+      <label>軸
+        <select id="rAxis">
+          <option value="project">Project</option>
+          <option value="project2">Project › 分類</option>
+          <option value="task">タスク</option>
+          <option value="tag">タグ</option>
+          <option value="level1">分類1</option>
+          <option value="level2">分類2まで</option>
+          <option value="level3">分類3まで</option>
+        </select>
+      </label>
+      <label>タグ <select id="rTag"><option value="">すべて</option></select></label>
+      <label>表示 <select id="rUnit"><option value="hm">時:分</option><option value="hours">時間(小数)</option><option value="minutes">分</option></select></label>
+    </div>
+    <div class="stat-row" id="reportStats"></div>
+    <div class="report-grid">
+      <section class="panel">
+        <div class="panel-head"><h2>内訳</h2><span class="muted small" id="breakdownHint"></span></div>
+        <div id="breakdown"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>日別</h2><span class="muted small">赤線＝基準時間・赤い日付＝休日</span></div>
+        <div id="dailyChart" class="daily-chart"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>見積と実績（予実）</h2><span class="muted small">期間内に動いた見積ありタスク</span></div>
+        <div id="estimateTable"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>時間配分の気づき</h2></div>
+        <div id="insights"></div>
+      </section>
+      <section class="panel span-2">
+        <div class="panel-head">
+          <h2>報告用テキスト</h2>
+          <div class="row-gap">
+            <button class="btn ghost small" id="copyReportBtn">コピー</button>
+            <button class="btn ghost small" id="csvReportBtn">期間のCSV</button>
+          </div>
+        </div>
+        <pre id="reportText" class="report-text"></pre>
+      </section>
+    </div>
+  </section>
+
+  <!-- 設定 -->
+  <section class="view" id="view-settings">
+    <div class="settings-cols">
+      <details class="panel set-panel" data-key="表示">
+        <summary><h2>表示</h2></summary>
+        <div class="grid-2">
+          <label class="field">テーマ
+            <select id="setTheme"><option value="light">ライト</option><option value="middle">ミドル</option><option value="dark">ダーク</option></select>
+          </label>
+          <label class="field">表示密度
+            <select id="setDensity"><option value="normal">標準</option><option value="compact">コンパクト</option></select>
+          </label>
+          <label class="field">画面切替タブの位置
+            <select id="setNav"><option value="auto">自動（狭い画面は下）</option><option value="top">上</option><option value="bottom">下</option></select>
+          </label>
+          <label class="check"><input type="checkbox" id="setClock"> ヘッダーに時計を表示</label>
+        </div>
+        <div id="installInfo" class="muted small"></div>
+      </details>
+
+      <details class="panel set-panel" data-key="勤務と時間">
+        <summary><h2>勤務と時間</h2></summary>
+        <div class="grid-2">
+          <label class="field">勤務日の基準時間 <input type="time" id="setBase" step="300"></label>
+          <label class="field">日付の区切り時刻 <input type="time" id="setBoundary" step="1800"></label>
+          <label class="field">始業の判定
+            <select id="setStartMode"><option value="first">その日の最初の記録から</option><option value="fixed">勤務日は始業時刻から</option></select>
+          </label>
+          <label class="field">勤務日の始業時刻 <input type="time" id="setWorkStart" step="300"></label>
+          <label class="field">未記録とみなす空き（分） <input type="number" id="setGap" min="1" max="120"></label>
+          <label class="field">記録しない短い計測（秒未満） <input type="number" id="setMinSec" min="0" max="600"></label>
+          <label class="field">停止時に終了時刻を確認（時間超） <input type="number" id="setLong" min="1" max="24"></label>
+          <label class="field">月の基準超過の上限目安（時間） <input type="number" id="setOverLimit" min="0" max="200"></label>
+          <label class="field">勤務終了とみなす無記録の時間（時間） <input type="number" id="setSessionIdle" min="1" max="12"></label>
+        </div>
+        <p class="muted small">夜勤や休日夜間の障害対応がある場合は「その日の最初の記録から」がおすすめです。最初に計測した時刻が始業になり、最後の記録から一定時間（既定3時間）空くとその日の勤務は終了とみなします。日付をまたぐ勤務は「日付の区切り時刻」（例 05:00）で前日扱いにできます。</p>
+      </details>
+
+      <details class="panel set-panel" data-key="休日・祝日">
+        <summary><h2>休日・祝日</h2></summary>
+        <div class="weekday-pick" id="setOffWeekdays"></div>
+        <p class="muted small">祝日・会社の休日・出勤日はカレンダーの日付をクリックして登録します。登録した日はクリックで名前の変更や削除ができます。</p>
+        <div class="hol-cal">
+          <div class="hol-cal-head">
+            <button type="button" class="btn ghost small" id="holPrev" aria-label="前の月">‹</button>
+            <strong id="holMonth"></strong>
+            <button type="button" class="btn ghost small" id="holNext" aria-label="次の月">›</button>
+            <button type="button" class="btn ghost small" id="holToday">今月</button>
+          </div>
+          <div class="hol-grid" id="holGrid"></div>
+          <div class="hol-legend muted small"><span class="lg hol"></span>登録した休日 <span class="lg off"></span>休みの曜日 <span class="lg work"></span>出勤日</div>
+        </div>
+        <div class="row-gap hol-tools">
+          <button type="button" class="btn ghost small" id="holAddBtn">＋ 日付を入力して登録</button>
+          <button type="button" class="btn ghost small" id="holNationalBtn"></button>
+        </div>
+        <div id="holidayPreview" class="muted small"></div>
+        <details class="hol-list-box">
+          <summary id="holListSummary">登録一覧</summary>
+          <div class="row-gap"><label class="small muted">年 <select id="holYear"></select></label><button type="button" class="btn danger ghost small" id="holClearYear">この年の登録をすべて削除…</button></div>
+          <div id="holList" class="hol-list"></div>
+        </details>
+        <p class="muted small">休日は基準時間0として扱い、作業した時間はすべて「基準超過（休日作業）」に入ります。休日一覧はエクスポートにも含まれ、別のPCでマージすると新しく編集された方の一覧が使われます。</p>
+      </details>
+
+      <details class="panel set-panel" data-key="通知">
+        <summary><h2>通知</h2></summary>
+        <label class="check"><input type="checkbox" id="setOsNotify"> OSの通知を使う <span id="notifyPerm" class="chip"></span></label>
+        <label class="check"><input type="checkbox" id="setOsAlways"> 画面を見ている時もOS通知を出す（通常は画面内メッセージのみ）</label>
+        <div class="grid-2">
+          <label class="field">計測なしの通知（分、0で無効） <input type="number" id="setIdleMin" min="0" max="240"></label>
+          <label class="field">計測中の経過通知（分ごと、0で無効） <input type="number" id="setRunMin" min="0" max="240"></label>
+          <label class="field">日時つき予定の事前通知（分前、0で無効） <input type="number" id="setRemind" min="0" max="120"></label>
+        </div>
+        <h3 class="sub-h">詰まりアラーム</h3>
+        <label class="check"><input type="checkbox" id="setAlert"> 要対応があれば定期的に知らせる</label>
+        <div class="grid-2">
+          <label class="field">間隔
+            <select id="setAlertInterval"><option value="30">30分</option><option value="60">1時間</option><option value="120">2時間</option><option value="240">4時間</option></select>
+          </label>
+          <label class="field">Inbox放置とみなす日数 <input type="number" id="setInbox" min="1" max="60"></label>
+          <label class="field">Waiting長期化とみなす日数 <input type="number" id="setWaiting" min="1" max="90"></label>
+        </div>
+        <button class="btn ghost small" id="testAlarmBtn">テスト通知</button>
+        <p class="muted small">通知はアプリ（またはタブ）を開いている間だけ動きます。最小化していても通知されます。</p>
+      </details>
+
+      <details class="panel set-panel" data-key="バックアップ・端末間の引き継ぎ">
+        <summary><h2>バックアップ・端末間の引き継ぎ</h2></summary>
+        <p class="muted small">データはこのブラウザ内に保存されます。別のPCとは日時付きJSONファイル（NAS等の共有フォルダ推奨）でマージします。同じ項目は更新日時が新しい方を採用し、削除も引き継ぎます。</p>
+        <div id="syncStatus" class="sync-status"></div>
+        <label class="field">共有フォルダの場所（メモ）
+          <input id="setSyncPath" placeholder="例: \\nas01\share\task_clock" autocomplete="off">
+        </label>
+        <p class="muted small">ブラウザの仕様上、選んだフォルダの名前しか取得できないため、フルパスはここにメモしておけます。</p>
+        <div class="btn-row">
+          <button class="btn primary" id="exportBtn">今すぐエクスポート</button>
+          <button class="btn ghost" id="chooseDirBtn">共有フォルダを選ぶ</button>
+          <button class="btn ghost" id="mergeLatestBtn">フォルダの最新をマージ</button>
+          <label class="btn ghost file-btn">ファイルを指定してマージ<input type="file" id="importFile" accept=".json,.csv" multiple></label>
+          <button class="btn ghost" id="pasteImportBtn">テキストを貼り付けてマージ</button>
+        </div>
+        <label class="check"><input type="checkbox" id="setAutoExport"> 変更があれば1時間ごとに共有フォルダへ自動エクスポート</label>
+        <label class="check"><input type="checkbox" id="setCloseWarn"> 未エクスポートの変更がある状態で閉じるとき警告する</label>
+        <p class="muted small">取り込める形式: Task Clock の JSON / Task Flow の JSON（タスク・Project）/ Task Time Log の CSV（時間記録）</p>
+        <div id="syncMessage" class="sync-message"></div>
+      </details>
+
+      <details class="panel set-panel" data-key="入力のコツ">
+        <summary><h2>入力のコツ</h2></summary>
+        <ul class="tips">
+          <li>入力欄は <code>@Project</code> <code>#タグ</code> <code>~30m</code>（見積）<code>^10/9</code>（期限）<code>!today</code> <code>!next</code> <code>!wait</code> <code>!cal</code> <code>!later</code> <code>*毎週</code>（繰り返し）を解釈します。</li>
+          <li>タスクの ▶ で計測すると「Project › 分類 › タスク名」とタグが自動で記録に入ります。別タスクの ▶ で切り替わります。</li>
+          <li>迷ったら「▶ すぐ開始」。後で記録画面やホームから割り当てられます。</li>
+          <li>ホームのタイムラインで空いている時間（未記録）をクリックすると、その時間をタスクに割り当てられます。</li>
+          <li>ショートカット: <kbd>N</kbd> 入力欄へ / <kbd>Space</kbd> 停止・直前の作業を再開 / <kbd>1</kbd>～<kbd>6</kbd> 画面切替</li>
+        </ul>
+      </details>
+
+      <details class="panel set-panel danger-zone" data-key="危険な操作">
+        <summary><h2>危険な操作</h2></summary>
+        <p class="muted small">タスク・Project・記録をすべて消去します。設定は残ります。実行前にエクスポートしてください。</p>
+        <button class="btn danger" id="clearAllBtn">全データを消去…</button>
+      </details>
+    </div>
+  </section>
+</main>
+
+<!-- タスク編集 -->
+<dialog id="taskDialog" class="dlg">
+  <form method="dialog" id="taskForm">
+    <header><h3 id="taskDlgTitle">タスク</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <label class="field">タスク名 <input name="title" required autocomplete="off"></label>
+      <div class="grid-2">
+        <label class="field">状態
+          <select name="state"><option value="inbox">Inbox</option><option value="next">Next</option><option value="waiting">Waiting（回答待ち）</option><option value="calendar">Calendar（日時固定）</option><option value="later">Later</option></select>
+        </label>
+        <label class="field">Project
+          <input name="project" list="projectNames" autocomplete="off" placeholder="なし／新規名も可">
+        </label>
+        <label class="field">分類（工程など）
+          <input name="category" list="categoryNames" autocomplete="off" placeholder="例: 設計・会議・調査">
+        </label>
+        <label class="field">タグ（空白区切り）
+          <input name="tags" list="tagNames" autocomplete="off" placeholder="例: 会議 レビュー">
+        </label>
+        <label class="field">期限・予定日時
+          <span class="row-gap"><input type="date" name="dueDate"><input type="time" name="dueTime"></span>
+        </label>
+        <label class="field">繰り返し（期限から）
+          <select name="repeat"><option value="">なし</option><option value="daily">毎日</option><option value="weekday">勤務日ごと（休日を除く）</option><option value="weekly">毎週</option><option value="monthly">毎月</option></select>
+        </label>
+        <label class="field">見積
+          <span class="row-gap"><input name="estimate" placeholder="30m / 1.5h" class="w-s">
+            <span class="chips-inline" data-est>
+              <button type="button" data-v="15">15分</button><button type="button" data-v="30">30分</button><button type="button" data-v="60">1h</button><button type="button" data-v="120">2h</button><button type="button" data-v="240">4h</button>
+            </span></span>
+        </label>
+        <label class="field" data-review>Waiting 確認日 <input type="date" name="review"></label>
+        <label class="check"><input type="checkbox" name="today"> 今日やる</label>
+      </div>
+      <p class="muted small" id="repeatHint"></p>
+      <label class="field">メモ <textarea name="note" rows="3"></textarea></label>
+      <div id="taskDlgRecords" class="dlg-records"></div>
+    </div>
+    <footer>
+      <button type="button" class="btn danger ghost" id="taskDeleteBtn">削除</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" data-close>キャンセル</button>
+      <button class="btn primary" value="save">保存</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- Project編集 -->
+<dialog id="projectDialog" class="dlg">
+  <form method="dialog" id="projectForm">
+    <header><h3>Project</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <label class="field">名前 <input name="title" required autocomplete="off"></label>
+      <label class="field">既定のタグ（このProjectの記録すべてに付与） <input name="tags" list="tagNames" autocomplete="off"></label>
+      <label class="field">色
+        <span class="color-pick" id="colorPick"></span>
+      </label>
+      <label class="field">メモ（ゴール・関係者など） <textarea name="note" rows="3"></textarea></label>
+      <label class="check"><input type="checkbox" name="archived"> アーカイブ（完了・休止）</label>
+      <div id="projectDlgTasks"></div>
+    </div>
+    <footer>
+      <button type="button" class="btn danger ghost" id="projectDeleteBtn">削除</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" id="projectAddTaskBtn">＋タスク</button>
+      <button type="button" class="btn ghost" data-close>キャンセル</button>
+      <button class="btn primary" value="save">保存</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- 記録編集 -->
+<dialog id="recordDialog" class="dlg">
+  <form method="dialog" id="recordForm">
+    <header><h3 id="recordDlgTitle">記録</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <div class="seg small" id="recKindSeg">
+        <button type="button" data-kind="actual" class="active">実績</button>
+        <button type="button" data-kind="plan">予定</button>
+      </div>
+      <label class="field">タスク
+        <select name="taskId" id="recTaskSelect"></select>
+      </label>
+      <details id="recLevelsBox">
+        <summary>分類を直接編集（タスク未割当の場合）</summary>
+        <div class="grid-5" id="recLevels"></div>
+      </details>
+      <label class="field">タグ（空白区切り） <input name="tags" list="tagNames" autocomplete="off"></label>
+      <div class="grid-3">
+        <label class="field">日付 <input type="date" name="date" required></label>
+        <label class="field">開始 <input type="time" name="start" required></label>
+        <label class="field">終了 <input type="time" name="end" required></label>
+      </div>
+      <div class="chips-inline" id="recDurChips">
+        <span class="muted small">長さ:</span>
+        <button type="button" data-v="15">15分</button><button type="button" data-v="30">30分</button><button type="button" data-v="60">1h</button><button type="button" data-v="90">1.5h</button><button type="button" data-v="120">2h</button>
+        <output id="recDurOut" class="muted small"></output>
+      </div>
+      <label class="field">メモ <input name="note" autocomplete="off"></label>
+    </div>
+    <footer>
+      <button type="button" class="btn danger ghost" id="recordDeleteBtn">削除</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" data-close>キャンセル</button>
+      <button class="btn primary" value="save">保存</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- タスク選択（割当・すき間埋め） -->
+<dialog id="pickDialog" class="dlg">
+  <form method="dialog">
+    <header><h3 id="pickTitle">タスクを選ぶ</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <p id="pickSub" class="muted small"></p>
+      <input id="pickSearch" type="search" placeholder="絞り込み、または新しいタスク名を入力" autocomplete="off">
+      <div id="pickList" class="pick-list"></div>
+    </div>
+  </form>
+</dialog>
+
+<!-- 汎用入力 -->
+<dialog id="promptDialog" class="dlg small-dlg">
+  <form method="dialog" id="promptForm">
+    <header><h3 id="promptTitle"></h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <p id="promptText" class="muted"></p>
+      <div id="promptFields"></div>
+    </div>
+    <footer>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" id="promptAlt" hidden></button>
+      <button type="button" class="btn ghost" data-close>キャンセル</button>
+      <button class="btn primary" value="ok" id="promptOk">OK</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- 休日の登録・編集 -->
+<dialog id="holDialog" class="dlg small-dlg">
+  <form method="dialog" id="holForm">
+    <header><h3 id="holDlgTitle">休日を登録</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <label class="field">日付 <input type="date" name="date" required></label>
+      <label class="field">名前 <input name="name" autocomplete="off" placeholder="例: 創立記念日・年末休暇・スポーツの日"></label>
+      <div class="seg small" id="holKind">
+        <button type="button" data-work="0" class="active">休日</button>
+        <button type="button" data-work="1">出勤日（休みの曜日だが出勤）</button>
+      </div>
+      <p id="holDlgNote" class="muted small"></p>
+    </div>
+    <footer>
+      <button type="button" class="btn danger ghost" id="holDeleteBtn">削除</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" data-close>キャンセル</button>
+      <button class="btn primary" value="ok">保存</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- 貼り付けでマージ -->
+<dialog id="pasteDialog" class="dlg">
+  <form method="dialog" id="pasteForm">
+    <header><h3>テキストを貼り付けてマージ</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <p class="muted small">エクスポートしたJSON、またはCSVの中身をそのまま貼り付けてください。スマートフォンでファイルを選びにくい場合に使えます。</p>
+      <div class="row-gap"><button type="button" class="btn ghost small" id="pasteFromClipboard">クリップボードから読み込む</button><output id="pasteInfo" class="muted small"></output></div>
+      <textarea id="pasteText" rows="12" spellcheck="false" placeholder='{"app":"TaskClock", ...} または rowType,id,recordKind,...'></textarea>
+    </div>
+    <footer><span class="spacer"></span><button type="button" class="btn ghost" data-close>キャンセル</button><button class="btn primary" value="ok">マージする</button></footer>
+  </form>
+</dialog>
+
+<!-- 一括置換 -->
+<dialog id="bulkDialog" class="dlg small-dlg">
+  <form method="dialog" id="bulkForm">
+    <header><h3>分類・タグの一括置換</h3><button type="button" class="btn ghost icon" data-close>×</button></header>
+    <div class="dlg-body">
+      <p class="muted small">タスク未割当の記録の表記揺れ修正用です。タスクに紐付く記録の分類は、タスク・Project名を変更すると自動で追従します。</p>
+      <label class="field">対象
+        <select name="field" id="bulkField">
+          <option value="0">分類1</option><option value="1">分類2</option><option value="2">分類3</option><option value="3">分類4</option><option value="4">分類5</option><option value="tag">タグ</option>
+        </select>
+      </label>
+      <label class="field">置換前 <select name="from" id="bulkFrom"></select></label>
+      <label class="field">置換後（空欄で削除） <input name="to" autocomplete="off"></label>
+    </div>
+    <footer><span class="spacer"></span><button type="button" class="btn ghost" data-close>キャンセル</button><button class="btn primary" value="ok">置換</button></footer>
+  </form>
+</dialog>
+
+<datalist id="projectNames"></datalist>
+<datalist id="categoryNames"></datalist>
+<datalist id="tagNames"></datalist>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="js/util.js"></script>
+<script src="js/store.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/report.js"></script>
+<script src="js/notify.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

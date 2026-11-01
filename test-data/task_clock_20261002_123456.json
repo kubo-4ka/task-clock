@@ -1,0 +1,7247 @@
+{
+ "app": "TaskClock",
+ "version": "1.0.0",
+ "schema": 1,
+ "exportedAt": "2026-10-02T02:37:41.048Z",
+ "deviceId": "device_sample",
+ "data": {
+  "projects": [
+   {
+    "id": "p_sample0",
+    "note": "",
+    "archived": false,
+    "title": "受発注システム改修",
+    "color": 0,
+    "tags": [],
+    "createdAt": 1786546800000,
+    "updatedAt": 1786546800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "p_sample1",
+    "note": "",
+    "archived": false,
+    "title": "顧客ポータル保守",
+    "color": 1,
+    "tags": [
+     "保守"
+    ],
+    "createdAt": 1786546800000,
+    "updatedAt": 1786546800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "p_sample2",
+    "note": "",
+    "archived": false,
+    "title": "社内共通業務",
+    "color": 2,
+    "tags": [],
+    "createdAt": 1786546800000,
+    "updatedAt": 1786546800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "p_sample3",
+    "note": "",
+    "archived": false,
+    "title": "新人育成",
+    "color": 3,
+    "tags": [
+     "育成"
+    ],
+    "createdAt": 1786546800000,
+    "updatedAt": 1786546800000,
+    "updatedBy": "device_sample"
+   }
+  ],
+  "tasks": [
+   {
+    "id": "t_sample4",
+    "title": "要件ヒアリング",
+    "projectId": "p_sample0",
+    "category": "要件定義",
+    "state": "next",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 1830,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": true,
+    "doneAt": 1787929200000,
+    "createdAt": 1787497200000,
+    "updatedAt": 1787497200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sample5",
+    "title": "基本設計書 作成",
+    "projectId": "p_sample0",
+    "category": "設計",
+    "state": "next",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 2700,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": true,
+    "doneAt": 1788706800000,
+    "createdAt": 1787410800000,
+    "updatedAt": 1787410800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sample6",
+    "title": "API仕様書 作成",
+    "projectId": "p_sample0",
+    "category": "設計",
+    "state": "next",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 4050,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": true,
+    "doneAt": 1789484400000,
+    "createdAt": 1788102000000,
+    "updatedAt": 1788102000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sample7",
+    "title": "DBテーブル設計レビュー反映",
+    "projectId": "p_sample0",
+    "category": "設計",
+    "state": "next",
+    "tags": [
+     "レビュー"
+    ],
+    "due": "",
+    "review": "",
+    "estimateMin": 2010,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": true,
+    "doneAt": 1790262000000,
+    "createdAt": 1787670000000,
+    "updatedAt": 1787670000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sample8",
+    "title": "受注画面 実装",
+    "projectId": "p_sample0",
+    "category": "実装",
+    "state": "next",
+    "tags": [],
+    "due": "2026-10-16",
+    "review": "",
+    "estimateMin": 5700,
+    "note": "",
+    "today": true,
+    "todayDate": "2026-10-02",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1787842800000,
+    "updatedAt": 1787842800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sample9",
+    "title": "結合テスト仕様",
+    "projectId": "p_sample0",
+    "category": "テスト",
+    "state": "later",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 480,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1787670000000,
+    "updatedAt": 1787670000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplea",
+    "title": "顧客から仕様回答待ち（出荷区分）",
+    "projectId": "p_sample0",
+    "category": "要件定義",
+    "state": "waiting",
+    "tags": [],
+    "due": "",
+    "review": "2026-10-01",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1787410800000,
+    "updatedAt": 1787410800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sampleb",
+    "title": "問い合わせ対応",
+    "projectId": "p_sample1",
+    "category": "運用",
+    "state": "next",
+    "tags": [
+     "問い合わせ"
+    ],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1786806000000,
+    "updatedAt": 1786806000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplec",
+    "title": "ログイン障害 調査",
+    "projectId": "p_sample1",
+    "category": "障害",
+    "state": "next",
+    "tags": [
+     "障害対応"
+    ],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": true,
+    "todayDate": "2026-10-02",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1786546800000,
+    "updatedAt": 1786546800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sampled",
+    "title": "月次リリース作業",
+    "projectId": "p_sample1",
+    "category": "リリース",
+    "state": "calendar",
+    "tags": [],
+    "due": "2026-10-07T18:00",
+    "review": "",
+    "estimateMin": 120,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1786892400000,
+    "updatedAt": 1786892400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplee",
+    "title": "ライブラリ更新の影響調査",
+    "projectId": "p_sample1",
+    "category": "調査",
+    "state": "inbox",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 240,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1786978800000,
+    "updatedAt": 1786978800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplef",
+    "title": "朝会",
+    "projectId": "p_sample2",
+    "category": "会議",
+    "state": "next",
+    "tags": [
+     "会議"
+    ],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1788188400000,
+    "updatedAt": 1788188400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sampleg",
+    "title": "週次定例",
+    "projectId": "p_sample2",
+    "category": "会議",
+    "state": "next",
+    "tags": [
+     "会議"
+    ],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1787756400000,
+    "updatedAt": 1787756400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_sampleh",
+    "title": "メール・チャット確認",
+    "projectId": "p_sample2",
+    "category": "日次",
+    "state": "next",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1787670000000,
+    "updatedAt": 1787670000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplei",
+    "title": "経費精算",
+    "projectId": "p_sample2",
+    "category": "事務",
+    "state": "inbox",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1790348400000,
+    "updatedAt": 1787151600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplej",
+    "title": "勤怠締め",
+    "projectId": "p_sample2",
+    "category": "事務",
+    "state": "calendar",
+    "tags": [],
+    "due": "2026-10-05",
+    "review": "",
+    "estimateMin": 30,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1786978800000,
+    "updatedAt": 1786978800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplek",
+    "title": "新人課題レビュー",
+    "projectId": "p_sample3",
+    "category": "レビュー",
+    "state": "next",
+    "tags": [
+     "レビュー"
+    ],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": true,
+    "todayDate": "2026-10-02",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1786719600000,
+    "updatedAt": 1786719600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplel",
+    "title": "研修資料 更新",
+    "projectId": "p_sample3",
+    "category": "資料",
+    "state": "later",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1788015600000,
+    "updatedAt": 1788015600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "t_samplem",
+    "title": "来期の目標設定メモ",
+    "projectId": "",
+    "category": "",
+    "state": "inbox",
+    "tags": [],
+    "due": "",
+    "review": "",
+    "estimateMin": 0,
+    "note": "",
+    "today": false,
+    "todayDate": "",
+    "done": false,
+    "doneAt": 0,
+    "createdAt": 1787929200000,
+    "updatedAt": 1787929200000,
+    "updatedBy": "device_sample"
+   }
+  ],
+  "records": [
+   {
+    "id": "r_samplen",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787271000000,
+    "endedAt": 1787271900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787271900000,
+    "updatedAt": 1787271900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sampleo",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787271900000,
+    "endedAt": 1787272800000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787272800000,
+    "updatedAt": 1787272800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samplep",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1787272800000,
+    "endedAt": 1787274600000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787274600000,
+    "updatedAt": 1787274600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sampleq",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1787276700000,
+    "endedAt": 1787277900000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787277900000,
+    "updatedAt": 1787277900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sampler",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1787279400000,
+    "endedAt": 1787280000000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787280000000,
+    "updatedAt": 1787280000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samples",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1787280000000,
+    "endedAt": 1787281800000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787281800000,
+    "updatedAt": 1787281800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samplet",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1787284800000,
+    "endedAt": 1787286000000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787286000000,
+    "updatedAt": 1787286000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sampleu",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1787286000000,
+    "endedAt": 1787287800000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787287800000,
+    "updatedAt": 1787287800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samplev",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787287800000,
+    "endedAt": 1787296800000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787296800000,
+    "updatedAt": 1787296800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samplew",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787298900000,
+    "endedAt": 1787301600000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787301600000,
+    "updatedAt": 1787301600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samplex",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787301900000,
+    "endedAt": 1787305860000,
+    "durationSec": 3960,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787305860000,
+    "updatedAt": 1787305860000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sampley",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787529900000,
+    "endedAt": 1787531100000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787531100000,
+    "updatedAt": 1787531100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_samplez",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787531100000,
+    "endedAt": 1787532000000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787532000000,
+    "updatedAt": 1787532000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample10",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1787532000000,
+    "endedAt": 1787533800000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787533800000,
+    "updatedAt": 1787533800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample11",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787533800000,
+    "endedAt": 1787538300000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787538300000,
+    "updatedAt": 1787538300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample12",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1787540400000,
+    "endedAt": 1787541000000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787541000000,
+    "updatedAt": 1787541000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample13",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787544000000,
+    "endedAt": 1787546700000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787546700000,
+    "updatedAt": 1787546700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample14",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787547600000,
+    "endedAt": 1787553900000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787553900000,
+    "updatedAt": 1787553900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample15",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787553900000,
+    "endedAt": 1787558400000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787558400000,
+    "updatedAt": 1787558400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample16",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787558400000,
+    "endedAt": 1787566500000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787566500000,
+    "updatedAt": 1787566500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample17",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787566500000,
+    "endedAt": 1787568060000,
+    "durationSec": 1560,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787568060000,
+    "updatedAt": 1787568060000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample18",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787616300000,
+    "endedAt": 1787617500000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787617500000,
+    "updatedAt": 1787617500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample19",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787617500000,
+    "endedAt": 1787618400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787618400000,
+    "updatedAt": 1787618400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1a",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787618700000,
+    "endedAt": 1787622300000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787622300000,
+    "updatedAt": 1787622300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1b",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787622300000,
+    "endedAt": 1787625000000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787625000000,
+    "updatedAt": 1787625000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1c",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787625000000,
+    "endedAt": 1787634000000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787634000000,
+    "updatedAt": 1787634000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1d",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787634000000,
+    "endedAt": 1787643000000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787643000000,
+    "updatedAt": 1787643000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1e",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787643000000,
+    "endedAt": 1787645700000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787645700000,
+    "updatedAt": 1787645700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1f",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787645700000,
+    "endedAt": 1787651820000,
+    "durationSec": 6120,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787651820000,
+    "updatedAt": 1787651820000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1g",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787702700000,
+    "endedAt": 1787703900000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787703900000,
+    "updatedAt": 1787703900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1h",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787703900000,
+    "endedAt": 1787704800000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787704800000,
+    "updatedAt": 1787704800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1i",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787704800000,
+    "endedAt": 1787713800000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787713800000,
+    "updatedAt": 1787713800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1j",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787716800000,
+    "endedAt": 1787719500000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787719500000,
+    "updatedAt": 1787719500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1k",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787721000000,
+    "endedAt": 1787730000000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787730000000,
+    "updatedAt": 1787730000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1l",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1787732100000,
+    "endedAt": 1787733000000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787733000000,
+    "updatedAt": 1787733000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1m",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787733000000,
+    "endedAt": 1787734380000,
+    "durationSec": 1380,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787734380000,
+    "updatedAt": 1787734380000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1n",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787788800000,
+    "endedAt": 1787790300000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787790300000,
+    "updatedAt": 1787790300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1o",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787790300000,
+    "endedAt": 1787791200000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787791200000,
+    "updatedAt": 1787791200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1p",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1787791200000,
+    "endedAt": 1787791800000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787791800000,
+    "updatedAt": 1787791800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1q",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1787792100000,
+    "endedAt": 1787796300000,
+    "durationSec": 4200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787796300000,
+    "updatedAt": 1787796300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1r",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1787797800000,
+    "endedAt": 1787800800000,
+    "durationSec": 3000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787800800000,
+    "updatedAt": 1787800800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1s",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787803200000,
+    "endedAt": 1787805900000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787805900000,
+    "updatedAt": 1787805900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1t",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787806200000,
+    "endedAt": 1787809800000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787809800000,
+    "updatedAt": 1787809800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1u",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787810100000,
+    "endedAt": 1787813700000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787813700000,
+    "updatedAt": 1787813700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1v",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1787814000000,
+    "endedAt": 1787815800000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787815800000,
+    "updatedAt": 1787815800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1w",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787817900000,
+    "endedAt": 1787822940000,
+    "durationSec": 5040,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787822940000,
+    "updatedAt": 1787822940000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1x",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787875200000,
+    "endedAt": 1787876400000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787876400000,
+    "updatedAt": 1787876400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1y",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1787876400000,
+    "endedAt": 1787877300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787877300000,
+    "updatedAt": 1787877300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample1z",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787877300000,
+    "endedAt": 1787884500000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787884500000,
+    "updatedAt": 1787884500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample20",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787884500000,
+    "endedAt": 1787889000000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787889000000,
+    "updatedAt": 1787889000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample21",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1787889600000,
+    "endedAt": 1787891400000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787891400000,
+    "updatedAt": 1787891400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample22",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1787892300000,
+    "endedAt": 1787894100000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787894100000,
+    "updatedAt": 1787894100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample23",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1787894100000,
+    "endedAt": 1787895900000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787895900000,
+    "updatedAt": 1787895900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample24",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787895900000,
+    "endedAt": 1787901300000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787901300000,
+    "updatedAt": 1787901300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample25",
+    "taskId": "t_sample4",
+    "levels": [
+     "受発注システム改修",
+     "要件定義",
+     "要件ヒアリング",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1787901600000,
+    "endedAt": 1787908800000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1787908800000,
+    "updatedAt": 1787908800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample26",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788135000000,
+    "endedAt": 1788135900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788135900000,
+    "updatedAt": 1788135900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample27",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788135900000,
+    "endedAt": 1788136800000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788136800000,
+    "updatedAt": 1788136800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample28",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1788136800000,
+    "endedAt": 1788138600000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788138600000,
+    "updatedAt": 1788138600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample29",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788138900000,
+    "endedAt": 1788142500000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788142500000,
+    "updatedAt": 1788142500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2a",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1788143400000,
+    "endedAt": 1788144600000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788144600000,
+    "updatedAt": 1788144600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2b",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788144900000,
+    "endedAt": 1788147600000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788147600000,
+    "updatedAt": 1788147600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2c",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1788149700000,
+    "endedAt": 1788152100000,
+    "durationSec": 2400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788152100000,
+    "updatedAt": 1788152100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2d",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788152400000,
+    "endedAt": 1788153900000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788153900000,
+    "updatedAt": 1788153900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2e",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788153900000,
+    "endedAt": 1788156600000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788156600000,
+    "updatedAt": 1788156600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2f",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788158100000,
+    "endedAt": 1788161700000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788161700000,
+    "updatedAt": 1788161700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2g",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788161700000,
+    "endedAt": 1788164400000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788164400000,
+    "updatedAt": 1788164400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2h",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1788164400000,
+    "endedAt": 1788165600000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788165600000,
+    "updatedAt": 1788165600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2i",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1788165600000,
+    "endedAt": 1788166800000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788166800000,
+    "updatedAt": 1788166800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2j",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1788167100000,
+    "endedAt": 1788168000000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788168000000,
+    "updatedAt": 1788168000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2k",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788168300000,
+    "endedAt": 1788169500000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788169500000,
+    "updatedAt": 1788169500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2l",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788169800000,
+    "endedAt": 1788172140000,
+    "durationSec": 2340,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788172140000,
+    "updatedAt": 1788172140000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2m",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788220800000,
+    "endedAt": 1788221700000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788221700000,
+    "updatedAt": 1788221700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2n",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788221700000,
+    "endedAt": 1788222600000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788222600000,
+    "updatedAt": 1788222600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2o",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788222900000,
+    "endedAt": 1788226500000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788226500000,
+    "updatedAt": 1788226500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2p",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788226500000,
+    "endedAt": 1788232800000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788232800000,
+    "updatedAt": 1788232800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2q",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788235200000,
+    "endedAt": 1788240600000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788240600000,
+    "updatedAt": 1788240600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2r",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1788242100000,
+    "endedAt": 1788245700000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788245700000,
+    "updatedAt": 1788245700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2s",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1788245700000,
+    "endedAt": 1788248700000,
+    "durationSec": 3000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788248700000,
+    "updatedAt": 1788248700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2t",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788250800000,
+    "endedAt": 1788252300000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788252300000,
+    "updatedAt": 1788252300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2u",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788252300000,
+    "endedAt": 1788258060000,
+    "durationSec": 5760,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788258060000,
+    "updatedAt": 1788258060000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2v",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788307200000,
+    "endedAt": 1788308700000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788308700000,
+    "updatedAt": 1788308700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2w",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788308700000,
+    "endedAt": 1788309600000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788309600000,
+    "updatedAt": 1788309600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2x",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788309600000,
+    "endedAt": 1788313200000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788313200000,
+    "updatedAt": 1788313200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2y",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1788313500000,
+    "endedAt": 1788314700000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788314700000,
+    "updatedAt": 1788314700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample2z",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788314700000,
+    "endedAt": 1788315900000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788315900000,
+    "updatedAt": 1788315900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample30",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788316200000,
+    "endedAt": 1788317400000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788317400000,
+    "updatedAt": 1788317400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample31",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1788317400000,
+    "endedAt": 1788321600000,
+    "durationSec": 4200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788321600000,
+    "updatedAt": 1788321600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample32",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788323700000,
+    "endedAt": 1788332700000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788332700000,
+    "updatedAt": 1788332700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample33",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788334800000,
+    "endedAt": 1788339300000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788339300000,
+    "updatedAt": 1788339300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample34",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788340200000,
+    "endedAt": 1788344700000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788344700000,
+    "updatedAt": 1788344700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample35",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788393600000,
+    "endedAt": 1788394500000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788394500000,
+    "updatedAt": 1788394500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample36",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788394500000,
+    "endedAt": 1788395400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788395400000,
+    "updatedAt": 1788395400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample37",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788395400000,
+    "endedAt": 1788400800000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788400800000,
+    "updatedAt": 1788400800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample38",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1788400800000,
+    "endedAt": 1788405000000,
+    "durationSec": 4200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788405000000,
+    "updatedAt": 1788405000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample39",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788408000000,
+    "endedAt": 1788416100000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788416100000,
+    "updatedAt": 1788416100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3a",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1788416400000,
+    "endedAt": 1788417000000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788417000000,
+    "updatedAt": 1788417000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3b",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788417000000,
+    "endedAt": 1788417900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788417900000,
+    "updatedAt": 1788417900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3c",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788417900000,
+    "endedAt": 1788425100000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788425100000,
+    "updatedAt": 1788425100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3d",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788427200000,
+    "endedAt": 1788427800000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788427800000,
+    "updatedAt": 1788427800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3e",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788480000000,
+    "endedAt": 1788481500000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788481500000,
+    "updatedAt": 1788481500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3f",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788481500000,
+    "endedAt": 1788482400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788482400000,
+    "updatedAt": 1788482400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3g",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788482400000,
+    "endedAt": 1788491400000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788491400000,
+    "updatedAt": 1788491400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3h",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788494400000,
+    "endedAt": 1788495300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788495300000,
+    "updatedAt": 1788495300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3i",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788495300000,
+    "endedAt": 1788504300000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788504300000,
+    "updatedAt": 1788504300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3j",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788504600000,
+    "endedAt": 1788505500000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788505500000,
+    "updatedAt": 1788505500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3k",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788505500000,
+    "endedAt": 1788512700000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788512700000,
+    "updatedAt": 1788512700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3l",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788512700000,
+    "endedAt": 1788514200000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788514200000,
+    "updatedAt": 1788514200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3m",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1788514200000,
+    "endedAt": 1788515400000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788515400000,
+    "updatedAt": 1788515400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3n",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788516300000,
+    "endedAt": 1788519420000,
+    "durationSec": 3120,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788519420000,
+    "updatedAt": 1788519420000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3o",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788739500000,
+    "endedAt": 1788741000000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788741000000,
+    "updatedAt": 1788741000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3p",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788741000000,
+    "endedAt": 1788741900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788741900000,
+    "updatedAt": 1788741900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3q",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1788741900000,
+    "endedAt": 1788743700000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788743700000,
+    "updatedAt": 1788743700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3r",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788744000000,
+    "endedAt": 1788753000000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788753000000,
+    "updatedAt": 1788753000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3s",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1788753600000,
+    "endedAt": 1788755400000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788755400000,
+    "updatedAt": 1788755400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3t",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788755400000,
+    "endedAt": 1788762600000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788762600000,
+    "updatedAt": 1788762600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3u",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788762900000,
+    "endedAt": 1788764400000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788764400000,
+    "updatedAt": 1788764400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3v",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788764700000,
+    "endedAt": 1788771000000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788771000000,
+    "updatedAt": 1788771000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3w",
+    "taskId": "t_sample5",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "基本設計書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788771300000,
+    "endedAt": 1788779040000,
+    "durationSec": 7740,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788779040000,
+    "updatedAt": 1788779040000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3x",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788826200000,
+    "endedAt": 1788827400000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788827400000,
+    "updatedAt": 1788827400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3y",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788827400000,
+    "endedAt": 1788828300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788828300000,
+    "updatedAt": 1788828300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample3z",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788828600000,
+    "endedAt": 1788832200000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788832200000,
+    "updatedAt": 1788832200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample40",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788832200000,
+    "endedAt": 1788841200000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788841200000,
+    "updatedAt": 1788841200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample41",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788841200000,
+    "endedAt": 1788842100000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788842100000,
+    "updatedAt": 1788842100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample42",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788842400000,
+    "endedAt": 1788848700000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788848700000,
+    "updatedAt": 1788848700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample43",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788848700000,
+    "endedAt": 1788851400000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788851400000,
+    "updatedAt": 1788851400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample44",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788851400000,
+    "endedAt": 1788857160000,
+    "durationSec": 5760,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788857160000,
+    "updatedAt": 1788857160000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample45",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788912300000,
+    "endedAt": 1788913200000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788913200000,
+    "updatedAt": 1788913200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample46",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788913200000,
+    "endedAt": 1788914100000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788914100000,
+    "updatedAt": 1788914100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample47",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788914100000,
+    "endedAt": 1788923100000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788923100000,
+    "updatedAt": 1788923100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample48",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788926400000,
+    "endedAt": 1788935400000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788935400000,
+    "updatedAt": 1788935400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample49",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1788935400000,
+    "endedAt": 1788936300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788936300000,
+    "updatedAt": 1788936300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4a",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788936300000,
+    "endedAt": 1788939900000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788939900000,
+    "updatedAt": 1788939900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4b",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788940200000,
+    "endedAt": 1788945600000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788945600000,
+    "updatedAt": 1788945600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4c",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788946500000,
+    "endedAt": 1788948000000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788948000000,
+    "updatedAt": 1788948000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4d",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1788998400000,
+    "endedAt": 1788999300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1788999300000,
+    "updatedAt": 1788999300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4e",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1788999300000,
+    "endedAt": 1789000200000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789000200000,
+    "updatedAt": 1789000200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4f",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789000200000,
+    "endedAt": 1789009200000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789009200000,
+    "updatedAt": 1789009200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4g",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789009200000,
+    "endedAt": 1789017300000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789017300000,
+    "updatedAt": 1789017300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4h",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789017600000,
+    "endedAt": 1789020000000,
+    "durationSec": 2400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789020000000,
+    "updatedAt": 1789020000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4i",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789020000000,
+    "endedAt": 1789021200000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789021200000,
+    "updatedAt": 1789021200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4j",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1789021200000,
+    "endedAt": 1789023000000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789023000000,
+    "updatedAt": 1789023000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4k",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789023300000,
+    "endedAt": 1789027800000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789027800000,
+    "updatedAt": 1789027800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4l",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789027800000,
+    "endedAt": 1789029000000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789029000000,
+    "updatedAt": 1789029000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4m",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789029300000,
+    "endedAt": 1789032900000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789032900000,
+    "updatedAt": 1789032900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4n",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1789032900000,
+    "endedAt": 1789036500000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789036500000,
+    "updatedAt": 1789036500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4o",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789036800000,
+    "endedAt": 1789038060000,
+    "durationSec": 1260,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789038060000,
+    "updatedAt": 1789038060000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4p",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789085400000,
+    "endedAt": 1789086600000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789086600000,
+    "updatedAt": 1789086600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4q",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789086600000,
+    "endedAt": 1789087500000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789087500000,
+    "updatedAt": 1789087500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4r",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789087500000,
+    "endedAt": 1789088700000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789088700000,
+    "updatedAt": 1789088700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4s",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1789088700000,
+    "endedAt": 1789092300000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789092300000,
+    "updatedAt": 1789092300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4t",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1789092300000,
+    "endedAt": 1789095300000,
+    "durationSec": 3000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789095300000,
+    "updatedAt": 1789095300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4u",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1789095300000,
+    "endedAt": 1789097100000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789097100000,
+    "updatedAt": 1789097100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4v",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789099200000,
+    "endedAt": 1789106400000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789106400000,
+    "updatedAt": 1789106400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4w",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789106400000,
+    "endedAt": 1789107900000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789107900000,
+    "updatedAt": 1789107900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4x",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1789109400000,
+    "endedAt": 1789110000000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789110000000,
+    "updatedAt": 1789110000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4y",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789110300000,
+    "endedAt": 1789118400000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789118400000,
+    "updatedAt": 1789118400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample4z",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789118400000,
+    "endedAt": 1789119000000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789119000000,
+    "updatedAt": 1789119000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample50",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789119300000,
+    "endedAt": 1789121460000,
+    "durationSec": 2160,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789121460000,
+    "updatedAt": 1789121460000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample51",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789344000000,
+    "endedAt": 1789345500000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789345500000,
+    "updatedAt": 1789345500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample52",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789345500000,
+    "endedAt": 1789346400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789346400000,
+    "updatedAt": 1789346400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample53",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789346400000,
+    "endedAt": 1789347600000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789347600000,
+    "updatedAt": 1789347600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample54",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789347600000,
+    "endedAt": 1789348800000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789348800000,
+    "updatedAt": 1789348800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample55",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1789350900000,
+    "endedAt": 1789354500000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789354500000,
+    "updatedAt": 1789354500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample56",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789354500000,
+    "endedAt": 1789356000000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789356000000,
+    "updatedAt": 1789356000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample57",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1789358400000,
+    "endedAt": 1789360800000,
+    "durationSec": 2400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789360800000,
+    "updatedAt": 1789360800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample58",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789360800000,
+    "endedAt": 1789365300000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789365300000,
+    "updatedAt": 1789365300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample59",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789365300000,
+    "endedAt": 1789370700000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789370700000,
+    "updatedAt": 1789370700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5a",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1789371600000,
+    "endedAt": 1789375800000,
+    "durationSec": 4200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789375800000,
+    "updatedAt": 1789375800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5b",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789431000000,
+    "endedAt": 1789431900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789431900000,
+    "updatedAt": 1789431900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5c",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789431900000,
+    "endedAt": 1789432800000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789432800000,
+    "updatedAt": 1789432800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5d",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789433100000,
+    "endedAt": 1789436700000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789436700000,
+    "updatedAt": 1789436700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5e",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789436700000,
+    "endedAt": 1789444800000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789444800000,
+    "updatedAt": 1789444800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5f",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789444800000,
+    "endedAt": 1789446600000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789446600000,
+    "updatedAt": 1789446600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5g",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789446600000,
+    "endedAt": 1789447800000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789447800000,
+    "updatedAt": 1789447800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5h",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789448100000,
+    "endedAt": 1789457100000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789457100000,
+    "updatedAt": 1789457100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5i",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789459200000,
+    "endedAt": 1789466940000,
+    "durationSec": 7740,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789466940000,
+    "updatedAt": 1789466940000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5j",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789517100000,
+    "endedAt": 1789518300000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789518300000,
+    "updatedAt": 1789518300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5k",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789518300000,
+    "endedAt": 1789519200000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789519200000,
+    "updatedAt": 1789519200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5l",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789519200000,
+    "endedAt": 1789528200000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789528200000,
+    "updatedAt": 1789528200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5m",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789531200000,
+    "endedAt": 1789533900000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789533900000,
+    "updatedAt": 1789533900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5n",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789533900000,
+    "endedAt": 1789542000000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789542000000,
+    "updatedAt": 1789542000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5o",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1789542000000,
+    "endedAt": 1789543200000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789543200000,
+    "updatedAt": 1789543200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5p",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1789543200000,
+    "endedAt": 1789543800000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789543800000,
+    "updatedAt": 1789543800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5q",
+    "taskId": "t_sample6",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "API仕様書 作成",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789545900000,
+    "endedAt": 1789548600000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789548600000,
+    "updatedAt": 1789548600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5r",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789603200000,
+    "endedAt": 1789604100000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789604100000,
+    "updatedAt": 1789604100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5s",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789604100000,
+    "endedAt": 1789605000000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789605000000,
+    "updatedAt": 1789605000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5t",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789605000000,
+    "endedAt": 1789610400000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789610400000,
+    "updatedAt": 1789610400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5u",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789610400000,
+    "endedAt": 1789618500000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789618500000,
+    "updatedAt": 1789618500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5v",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789618500000,
+    "endedAt": 1789625700000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789625700000,
+    "updatedAt": 1789625700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5w",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1789626000000,
+    "endedAt": 1789626600000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789626600000,
+    "updatedAt": 1789626600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5x",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789627500000,
+    "endedAt": 1789628400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789628400000,
+    "updatedAt": 1789628400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5y",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789628400000,
+    "endedAt": 1789634700000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789634700000,
+    "updatedAt": 1789634700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample5z",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1789634700000,
+    "endedAt": 1789635300000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789635300000,
+    "updatedAt": 1789635300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample60",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789635600000,
+    "endedAt": 1789638300000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789638300000,
+    "updatedAt": 1789638300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample61",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー",
+     "資料探索"
+    ],
+    "startedAt": 1789638300000,
+    "endedAt": 1789639800000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789639800000,
+    "updatedAt": 1789639800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample62",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789689900000,
+    "endedAt": 1789691100000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789691100000,
+    "updatedAt": 1789691100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample63",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789691100000,
+    "endedAt": 1789692000000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789692000000,
+    "updatedAt": 1789692000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample64",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789692000000,
+    "endedAt": 1789697400000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789697400000,
+    "updatedAt": 1789697400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample65",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1789697400000,
+    "endedAt": 1789698300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789698300000,
+    "updatedAt": 1789698300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample66",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー",
+     "資料探索"
+    ],
+    "startedAt": 1789698300000,
+    "endedAt": 1789699500000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789699500000,
+    "updatedAt": 1789699500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample67",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789699500000,
+    "endedAt": 1789704000000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789704000000,
+    "updatedAt": 1789704000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample68",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789706100000,
+    "endedAt": 1789712400000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789712400000,
+    "updatedAt": 1789712400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample69",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1789712700000,
+    "endedAt": 1789716900000,
+    "durationSec": 4200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789716900000,
+    "updatedAt": 1789716900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6a",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789717800000,
+    "endedAt": 1789724100000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789724100000,
+    "updatedAt": 1789724100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6b",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789724100000,
+    "endedAt": 1789730100000,
+    "durationSec": 6000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789730100000,
+    "updatedAt": 1789730100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6c",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1789948800000,
+    "endedAt": 1789950000000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789950000000,
+    "updatedAt": 1789950000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6d",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1789950000000,
+    "endedAt": 1789950900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789950900000,
+    "updatedAt": 1789950900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6e",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789950900000,
+    "endedAt": 1789951500000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789951500000,
+    "updatedAt": 1789951500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6f",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789951800000,
+    "endedAt": 1789957200000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789957200000,
+    "updatedAt": 1789957200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6g",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー",
+     "資料探索"
+    ],
+    "startedAt": 1789957500000,
+    "endedAt": 1789959300000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789959300000,
+    "updatedAt": 1789959300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6h",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789959600000,
+    "endedAt": 1789967700000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789967700000,
+    "updatedAt": 1789967700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6i",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789967700000,
+    "endedAt": 1789970400000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789970400000,
+    "updatedAt": 1789970400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6j",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1789971900000,
+    "endedAt": 1789972500000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789972500000,
+    "updatedAt": 1789972500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6k",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー",
+     "資料探索"
+    ],
+    "startedAt": 1789973400000,
+    "endedAt": 1789975800000,
+    "durationSec": 2400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789975800000,
+    "updatedAt": 1789975800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6l",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1789976100000,
+    "endedAt": 1789977600000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789977600000,
+    "updatedAt": 1789977600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6m",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1789979700000,
+    "endedAt": 1789981500000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789981500000,
+    "updatedAt": 1789981500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6n",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1789981500000,
+    "endedAt": 1789984920000,
+    "durationSec": 3420,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1789984920000,
+    "updatedAt": 1789984920000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6o",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790035200000,
+    "endedAt": 1790036700000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790036700000,
+    "updatedAt": 1790036700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6p",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790036700000,
+    "endedAt": 1790037600000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790037600000,
+    "updatedAt": 1790037600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6q",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790037900000,
+    "endedAt": 1790041500000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790041500000,
+    "updatedAt": 1790041500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6r",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790041500000,
+    "endedAt": 1790050500000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790050500000,
+    "updatedAt": 1790050500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6s",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790050500000,
+    "endedAt": 1790056800000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790056800000,
+    "updatedAt": 1790056800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6t",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1790056800000,
+    "endedAt": 1790058300000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790058300000,
+    "updatedAt": 1790058300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6u",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790058600000,
+    "endedAt": 1790060400000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790060400000,
+    "updatedAt": 1790060400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6v",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790060700000,
+    "endedAt": 1790067000000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790067000000,
+    "updatedAt": 1790067000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6w",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790067000000,
+    "endedAt": 1790070600000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790070600000,
+    "updatedAt": 1790070600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6x",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790072100000,
+    "endedAt": 1790073900000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790073900000,
+    "updatedAt": 1790073900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6y",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790121600000,
+    "endedAt": 1790122800000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790122800000,
+    "updatedAt": 1790122800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample6z",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790122800000,
+    "endedAt": 1790123700000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790123700000,
+    "updatedAt": 1790123700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample70",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790123700000,
+    "endedAt": 1790126400000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790126400000,
+    "updatedAt": 1790126400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample71",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790126400000,
+    "endedAt": 1790133600000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790133600000,
+    "updatedAt": 1790133600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample72",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー",
+     "資料探索"
+    ],
+    "startedAt": 1790136000000,
+    "endedAt": 1790138400000,
+    "durationSec": 2400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790138400000,
+    "updatedAt": 1790138400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample73",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790138400000,
+    "endedAt": 1790141100000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790141100000,
+    "updatedAt": 1790141100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample74",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790141100000,
+    "endedAt": 1790142900000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790142900000,
+    "updatedAt": 1790142900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample75",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1790142900000,
+    "endedAt": 1790144100000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790144100000,
+    "updatedAt": 1790144100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample76",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790146200000,
+    "endedAt": 1790154420000,
+    "durationSec": 8220,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790154420000,
+    "updatedAt": 1790154420000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample77",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790208000000,
+    "endedAt": 1790209500000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790209500000,
+    "updatedAt": 1790209500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample78",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790209500000,
+    "endedAt": 1790210400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790210400000,
+    "updatedAt": 1790210400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample79",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1790210400000,
+    "endedAt": 1790211900000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790211900000,
+    "updatedAt": 1790211900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7a",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790213400000,
+    "endedAt": 1790218800000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790218800000,
+    "updatedAt": 1790218800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7b",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790218800000,
+    "endedAt": 1790220600000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790220600000,
+    "updatedAt": 1790220600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7c",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1790222400000,
+    "endedAt": 1790223000000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790223000000,
+    "updatedAt": 1790223000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7d",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790223000000,
+    "endedAt": 1790224800000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790224800000,
+    "updatedAt": 1790224800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7e",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790224800000,
+    "endedAt": 1790226600000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790226600000,
+    "updatedAt": 1790226600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7f",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応"
+    ],
+    "startedAt": 1790226600000,
+    "endedAt": 1790227800000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790227800000,
+    "updatedAt": 1790227800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7g",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790228100000,
+    "endedAt": 1790237100000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790237100000,
+    "updatedAt": 1790237100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7h",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790237100000,
+    "endedAt": 1790238780000,
+    "durationSec": 1680,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790238780000,
+    "updatedAt": 1790238780000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7i",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790294700000,
+    "endedAt": 1790296200000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790296200000,
+    "updatedAt": 1790296200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7j",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790296200000,
+    "endedAt": 1790297100000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790297100000,
+    "updatedAt": 1790297100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7k",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790297100000,
+    "endedAt": 1790299800000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790299800000,
+    "updatedAt": 1790299800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7l",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790300100000,
+    "endedAt": 1790305500000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790305500000,
+    "updatedAt": 1790305500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7m",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790308800000,
+    "endedAt": 1790315100000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790315100000,
+    "updatedAt": 1790315100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7n",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790315400000,
+    "endedAt": 1790318100000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790318100000,
+    "updatedAt": 1790318100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7o",
+    "taskId": "t_sample7",
+    "levels": [
+     "受発注システム改修",
+     "設計",
+     "DBテーブル設計レビュー反映",
+     "",
+     ""
+    ],
+    "tags": [
+     "レビュー"
+    ],
+    "startedAt": 1790319600000,
+    "endedAt": 1790325000000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790325000000,
+    "updatedAt": 1790325000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7p",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1790325300000,
+    "endedAt": 1790326200000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790326200000,
+    "updatedAt": 1790326200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7q",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790553600000,
+    "endedAt": 1790554500000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790554500000,
+    "updatedAt": 1790554500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7r",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790554500000,
+    "endedAt": 1790555400000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790555400000,
+    "updatedAt": 1790555400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7s",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790555400000,
+    "endedAt": 1790560800000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790560800000,
+    "updatedAt": 1790560800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7t",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790560800000,
+    "endedAt": 1790567100000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790567100000,
+    "updatedAt": 1790567100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7u",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790568000000,
+    "endedAt": 1790572500000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790572500000,
+    "updatedAt": 1790572500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7v",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1790572800000,
+    "endedAt": 1790574000000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790574000000,
+    "updatedAt": 1790574000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7w",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1790574300000,
+    "endedAt": 1790576100000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790576100000,
+    "updatedAt": 1790576100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7x",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790577600000,
+    "endedAt": 1790584800000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790584800000,
+    "updatedAt": 1790584800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7y",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790640600000,
+    "endedAt": 1790642100000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790642100000,
+    "updatedAt": 1790642100000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample7z",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790642100000,
+    "endedAt": 1790643000000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790643000000,
+    "updatedAt": 1790643000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample80",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790643300000,
+    "endedAt": 1790646900000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790646900000,
+    "updatedAt": 1790646900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample81",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790646900000,
+    "endedAt": 1790655000000,
+    "durationSec": 8100,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790655000000,
+    "updatedAt": 1790655000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample82",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790655300000,
+    "endedAt": 1790658000000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790658000000,
+    "updatedAt": 1790658000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample83",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790658000000,
+    "endedAt": 1790660700000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790660700000,
+    "updatedAt": 1790660700000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample84",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1790660700000,
+    "endedAt": 1790661900000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790661900000,
+    "updatedAt": 1790661900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample85",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790662200000,
+    "endedAt": 1790665800000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790665800000,
+    "updatedAt": 1790665800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample86",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790667900000,
+    "endedAt": 1790671500000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790671500000,
+    "updatedAt": 1790671500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample87",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1790671800000,
+    "endedAt": 1790672400000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790672400000,
+    "updatedAt": 1790672400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample88",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [
+     "資料探索"
+    ],
+    "startedAt": 1790672400000,
+    "endedAt": 1790673600000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790673600000,
+    "updatedAt": 1790673600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample89",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790726400000,
+    "endedAt": 1790727900000,
+    "durationSec": 1500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790727900000,
+    "updatedAt": 1790727900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8a",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790727900000,
+    "endedAt": 1790728800000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790728800000,
+    "updatedAt": 1790728800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8b",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790728800000,
+    "endedAt": 1790733300000,
+    "durationSec": 4500,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790733300000,
+    "updatedAt": 1790733300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8c",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790733300000,
+    "endedAt": 1790742300000,
+    "durationSec": 9000,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790742300000,
+    "updatedAt": 1790742300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8d",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790742600000,
+    "endedAt": 1790748900000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790748900000,
+    "updatedAt": 1790748900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8e",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790749800000,
+    "endedAt": 1790752500000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790752500000,
+    "updatedAt": 1790752500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8f",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790752500000,
+    "endedAt": 1790754300000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790754300000,
+    "updatedAt": 1790754300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8g",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790754300000,
+    "endedAt": 1790760600000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790760600000,
+    "updatedAt": 1790760600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8h",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790760600000,
+    "endedAt": 1790766240000,
+    "durationSec": 5640,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790766240000,
+    "updatedAt": 1790766240000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8i",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790813100000,
+    "endedAt": 1790814300000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790814300000,
+    "updatedAt": 1790814300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8j",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790814300000,
+    "endedAt": 1790815200000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790815200000,
+    "updatedAt": 1790815200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8k",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790815200000,
+    "endedAt": 1790821500000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790821500000,
+    "updatedAt": 1790821500000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8l",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790821800000,
+    "endedAt": 1790829000000,
+    "durationSec": 7200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790829000000,
+    "updatedAt": 1790829000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8m",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790829300000,
+    "endedAt": 1790832000000,
+    "durationSec": 2700,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790832000000,
+    "updatedAt": 1790832000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8n",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790832300000,
+    "endedAt": 1790838600000,
+    "durationSec": 6300,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790838600000,
+    "updatedAt": 1790838600000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8o",
+    "taskId": "t_samplec",
+    "levels": [
+     "顧客ポータル保守",
+     "障害",
+     "ログイン障害 調査",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "障害対応",
+     "割り込み"
+    ],
+    "startedAt": 1790838600000,
+    "endedAt": 1790842800000,
+    "durationSec": 4200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790842800000,
+    "updatedAt": 1790842800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8p",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1790843700000,
+    "endedAt": 1790844300000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790844300000,
+    "updatedAt": 1790844300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8q",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1790844600000,
+    "endedAt": 1790845200000,
+    "durationSec": 600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790845200000,
+    "updatedAt": 1790845200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8r",
+    "taskId": "t_sampleb",
+    "levels": [
+     "顧客ポータル保守",
+     "運用",
+     "問い合わせ対応",
+     "",
+     ""
+    ],
+    "tags": [
+     "保守",
+     "問い合わせ",
+     "割り込み"
+    ],
+    "startedAt": 1790845200000,
+    "endedAt": 1790846400000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790846400000,
+    "updatedAt": 1790846400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8s",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790846400000,
+    "endedAt": 1790851800000,
+    "durationSec": 5400,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790851800000,
+    "updatedAt": 1790851800000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8t",
+    "taskId": "t_sampleh",
+    "levels": [
+     "社内共通業務",
+     "日次",
+     "メール・チャット確認",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790899200000,
+    "endedAt": 1790900400000,
+    "durationSec": 1200,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790900400000,
+    "updatedAt": 1790900400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8u",
+    "taskId": "t_samplef",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "朝会",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1790900400000,
+    "endedAt": 1790901300000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790901300000,
+    "updatedAt": 1790901300000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8v",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1790901300000,
+    "endedAt": 1790904900000,
+    "durationSec": 3600,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790904900000,
+    "updatedAt": 1790904900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8w",
+    "taskId": "t_samplek",
+    "levels": [
+     "新人育成",
+     "レビュー",
+     "新人課題レビュー",
+     "",
+     ""
+    ],
+    "tags": [
+     "育成",
+     "レビュー"
+    ],
+    "startedAt": 1790905200000,
+    "endedAt": 1790907000000,
+    "durationSec": 1800,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790907000000,
+    "updatedAt": 1790907000000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8x",
+    "taskId": "",
+    "levels": [
+     "仮タスク",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "tags": [
+     "割り込み"
+    ],
+    "startedAt": 1790907000000,
+    "endedAt": 1790907900000,
+    "durationSec": 900,
+    "kind": "actual",
+    "source": "timer",
+    "note": "",
+    "createdAt": 1790907900000,
+    "updatedAt": 1790907900000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8y",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1791246600000,
+    "endedAt": 1791250200000,
+    "durationSec": 3600,
+    "kind": "plan",
+    "source": "manual",
+    "note": "",
+    "createdAt": 1791250200000,
+    "updatedAt": 1791250200000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample8z",
+    "taskId": "t_sample8",
+    "levels": [
+     "受発注システム改修",
+     "実装",
+     "受注画面 実装",
+     "",
+     ""
+    ],
+    "tags": [],
+    "startedAt": 1791432000000,
+    "endedAt": 1791446400000,
+    "durationSec": 14400,
+    "kind": "plan",
+    "source": "manual",
+    "note": "集中枠",
+    "createdAt": 1791446400000,
+    "updatedAt": 1791446400000,
+    "updatedBy": "device_sample"
+   },
+   {
+    "id": "r_sample90",
+    "taskId": "t_sampleg",
+    "levels": [
+     "社内共通業務",
+     "会議",
+     "週次定例",
+     "",
+     ""
+    ],
+    "tags": [
+     "会議"
+    ],
+    "startedAt": 1791851400000,
+    "endedAt": 1791855000000,
+    "durationSec": 3600,
+    "kind": "plan",
+    "source": "manual",
+    "note": "",
+    "createdAt": 1791855000000,
+    "updatedAt": 1791855000000,
+    "updatedBy": "device_sample"
+   }
+  ],
+  "deleted": {
+   "projects": [],
+   "tasks": [],
+   "records": []
+  }
+ }
+}
